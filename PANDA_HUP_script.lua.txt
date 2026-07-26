@@ -920,7 +920,7 @@ startBatAimbot=function()
     local root=char:FindFirstChild("HumanoidRootPart");local hum0=char:FindFirstChildOfClass("Humanoid")
     if not root or not hum0 then return end;hum0.AutoRotate=false
     
-    local AIMBOT_SPEED=80;local MELEE_OFFSET=2;local velHistory={};local MAX_HIST=8;local lastTargetPos=nil
+    local AIMBOT_SPEED=54;local MELEE_OFFSET=2;local velHistory={};local MAX_HIST=8;local lastTargetPos=nil
     
     aimbotConn=RunService.RenderStepped:Connect(function()
         if not autoBatEnabled then return end
